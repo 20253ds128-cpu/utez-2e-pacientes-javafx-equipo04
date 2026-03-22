@@ -12,7 +12,7 @@ public class MainApp extends Application {
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/MainView.fxml"));
 
-        Scene scene = new Scene(loader.load(), 800, 900);
+        Scene scene = new Scene(loader.load(), 600, 400);
 
         stage.setTitle("Catálogo de Libros");
         stage.setScene(scene);
