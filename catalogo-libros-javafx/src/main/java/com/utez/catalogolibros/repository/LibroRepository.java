@@ -53,7 +53,7 @@ public class LibroRepository {
         try {
             Path path = Paths.get(FILE_PATH);
 
-            List<String> lineas = Files.readAllLines(path);
+            List<String> lineas = new ArrayList<>();
 
             for (Libro libro : libros) {
                 String linea = String.join(",",
