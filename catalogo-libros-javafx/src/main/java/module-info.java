@@ -9,6 +9,6 @@ module com.biblioteca.catalogolibrosjavafx {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
-    opens com.biblioteca.catalogolibrosjavafx to javafx.fxml;
-    exports com.biblioteca.catalogolibrosjavafx;
+    opens com.biblioteca to javafx.fxml;
+    exports com.biblioteca;
 }
