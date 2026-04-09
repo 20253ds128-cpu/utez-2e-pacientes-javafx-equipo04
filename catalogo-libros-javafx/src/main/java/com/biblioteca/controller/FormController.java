@@ -39,7 +39,7 @@ import javafx.stage.Stage;
                 txtAutor.setText(libro.getAutor());
                 txtAnio.setText(String.valueOf(libro.getAnio()));
                 txtGenero.setText(libro.getGenero());
-                chkDisponible.setSelected(libro.isDisponible());
+                chkDisponible.setSelected(libro.getDisponible());
             } else {
                 lblTituloPantalla.setText("Registrar libro");
                 chkDisponible.setSelected(true);

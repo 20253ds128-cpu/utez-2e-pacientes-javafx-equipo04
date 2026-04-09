@@ -66,7 +66,7 @@ public class Libro {
     }
 
     public void setDisponible(boolean disponible){
-        this.disponible =disponible;
+        this.disponible = disponible;
     }
 
     @Override
