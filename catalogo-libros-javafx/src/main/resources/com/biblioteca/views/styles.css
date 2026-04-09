@@ -1,3 +1,14 @@
 .rot {
     -color-primary: #2c3e50;
+    -color-accent:    #2980b9;
+    -color-success:   #27ae60;
+    -color-danger:    #e74c3c;
+    -color-info:      #8e44ad;
+    -color-bg:        #ecf0f1;
+    -color-bg-light:  #ffffff;
+    -color-text:      #2c3e50;
+    -color-muted:     #7f8c8d;
+    -fx-background-color: #0d404c;
+    -fx-font-family:  "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -fx-font-size:    13px;
 }

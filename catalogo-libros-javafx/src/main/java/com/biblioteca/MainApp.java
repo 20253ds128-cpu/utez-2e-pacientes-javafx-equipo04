@@ -21,6 +21,10 @@ public class MainApp extends Application {
 
         Scene scene = new Scene(loader.load(), 900,600);
 
+        scene.getStylesheets().add(
+                getClass().getResource("/com/biblioteca/views/styles.css").toExternalForm()
+        );
+
         primaryStage.setTitle("Biblioteca Escolar - Catalogo de libros");
         primaryStage.setScene(scene);
         primaryStage.setMinWidth(800);
