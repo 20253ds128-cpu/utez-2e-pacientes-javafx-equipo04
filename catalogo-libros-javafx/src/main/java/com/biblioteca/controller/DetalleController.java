@@ -3,14 +3,14 @@ package com.biblioteca.controller;
 import com.biblioteca.model.Libro;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 
-import java.lang.classfile.Label;
 
 public class DetalleController {
     @FXML
-    private Label lblISBN;
+    private Label lblIsbn;
     @FXML
-    private  Label lblTitulo;
+    private Label lblTitulo;
     @FXML
     private Label lblAutor;
     @FXML
