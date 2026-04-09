@@ -8,7 +8,7 @@
       fx:controller="com.biblioteca.controller.FormController"
       spacing="10">
 
-    // titulo
+    <!-- titulo -->
     <VBox alignment="CENTER">
         <padding>
             <Insets top="10" bottom="10"/>
@@ -17,7 +17,7 @@
         <Label fx:id="lblTituloPantalla" text="Libro"/>
     </VBox>
 
-    // formulario
+    <!-- formulario -->
     <VBox spacing="10" VBox.vgrow="ALWAYS">
         <padding>
             <Insets top="10" right="20" bottom="10" left="20"/>
@@ -25,32 +25,32 @@
 
         <GridPane hgap="10" vgap="10">
 
-            // isbn
+            <!-- isbn -->
             <Label text="ISBN / ID *" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
             <TextField fx:id="txtIsbn" promptText="Ej. 978-607-XXX"
                        GridPane.columnIndex="1" GridPane.rowIndex="0"/>
 
-            // titulo
+            <!-- titulo -->
             <Label text="Título *" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
             <TextField fx:id="txtTitulo" promptText="Título del libro"
                        GridPane.columnIndex="1" GridPane.rowIndex="1"/>
 
-            // autor
+            <!-- autor -->
             <Label text="Autor *" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
             <TextField fx:id="txtAutor" promptText="Nombre del autor"
                        GridPane.columnIndex="1" GridPane.rowIndex="2"/>
 
-            // año
+            <!-- anio -->
             <Label text="Año *" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
             <TextField fx:id="txtAnio" promptText="Ej. 2020"
                        GridPane.columnIndex="1" GridPane.rowIndex="3"/>
 
-            // genero
+            <!-- genero -->
             <Label text="Género *" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
             <TextField fx:id="txtGenero" promptText="Ej. novela, ciencia..."
                        GridPane.columnIndex="1" GridPane.rowIndex="4"/>
 
-            // disponible
+            <!-- disponible -->
             <Label text="Disponible" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
             <CheckBox fx:id="chkDisponible"
                       GridPane.columnIndex="1" GridPane.rowIndex="5"/>
@@ -62,12 +62,12 @@
 
         </GridPane>
 
-        // mensaje
+        <!-- mensaje -->
         <Label fx:id="lblError" text="" wrapText="true"/>
 
     </VBox>
 
-    // botones
+    <!-- botones -->
     <HBox spacing="10" alignment="CENTER_RIGHT">
         <padding>
             <Insets right="20" bottom="10"/>

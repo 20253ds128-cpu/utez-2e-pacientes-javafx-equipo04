@@ -7,7 +7,7 @@
 <BorderPane xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.biblioteca.controller.MainController">
 
-    // parte superior
+    <!-- Parte superior -->
     <top>
         <VBox spacing="5" alignment="CENTER">
             <padding>
@@ -19,7 +19,7 @@
         </VBox>
     </top>
 
-    // parte del centro (la tabla)
+    <!-- Centro (tabla) -->
     <center>
         <VBox spacing="10">
             <padding>
@@ -39,7 +39,7 @@
         </VBox>
     </center>
 
-    // parte inferior (botones)
+    <!-- Parte inferior -->
     <bottom>
         <VBox spacing="10" alignment="CENTER">
             <padding>

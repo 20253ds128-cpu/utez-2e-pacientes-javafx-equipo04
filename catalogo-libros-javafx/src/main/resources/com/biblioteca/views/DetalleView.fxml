@@ -8,7 +8,7 @@
       fx:controller="com.biblioteca.controller.DetalleController"
       spacing="10">
 
-    // titulo
+    <!-- titulo -->
     <VBox alignment="CENTER">
         <padding>
             <Insets top="10" bottom="10"/>
@@ -17,7 +17,7 @@
         <Label text="detalle del libro"/>
     </VBox>
 
-    // datos
+    <!-- datos -->
     <VBox VBox.vgrow="ALWAYS">
         <padding>
             <Insets top="10" right="20" bottom="10" left="20"/>
@@ -25,19 +25,19 @@
 
         <GridPane hgap="10" vgap="10">
 
-            // isbn
+            <!-- isbn -->
             <Label text="isbn:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
             <Label fx:id="lblIsbn" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
 
-            // titulo
+            <!-- titulo -->
             <Label text="titulo:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
             <Label fx:id="lblTitulo" GridPane.columnIndex="1" GridPane.rowIndex="1" wrapText="true"/>
 
-            // autor -->
+            <!-- autor -->
             <Label text="autor:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
             <Label fx:id="lblAutor" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
 
-            // año -->
+            <!-- anio -->
             <Label text="año:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
             <Label fx:id="lblAnio" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
 
@@ -57,7 +57,7 @@
         </GridPane>
     </VBox>
 
-    <!-- boton -->
+    <!-- boton para regresar -->
     <HBox alignment="CENTER">
         <padding>
             <Insets bottom="10"/>
