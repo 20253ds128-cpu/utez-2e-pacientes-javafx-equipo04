@@ -17,11 +17,9 @@ public class MainApp extends Application {
     public void start(Stage primaryStage) throws IOException{
 
         libroServices = new LibroServices();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("libro.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/biblioteca/views/MainView.fxml"));
 
         Scene scene = new Scene(loader.load(), 900,600);
-
-        scene.getStylesheets().add(getClass().getResource("libro.css").toExternalForm());
 
         primaryStage.setTitle("Biblioteca Escolar - Catalogo de libros");
         primaryStage.setScene(scene);

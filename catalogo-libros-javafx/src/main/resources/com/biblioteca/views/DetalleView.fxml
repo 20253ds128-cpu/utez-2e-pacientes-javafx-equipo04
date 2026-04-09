@@ -57,7 +57,6 @@
         </GridPane>
     </VBox>
 
-    <!-- boton para regresar -->
     <HBox alignment="CENTER">
         <padding>
             <Insets bottom="10"/>

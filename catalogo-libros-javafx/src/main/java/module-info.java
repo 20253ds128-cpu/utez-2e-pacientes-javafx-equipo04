@@ -1,14 +1,15 @@
-module com.biblioteca.catalogolibrosjavafx {
+module com.biblioteca {
     requires javafx.controls;
     requires javafx.fxml;
-    requires javafx.web;
+    requires java.desktop;
 
-    requires org.controlsfx.controls;
-    requires com.dlsc.formsfx;
-    requires net.synedra.validatorfx;
-    requires eu.hansolo.tilesfx;
-    requires com.almasb.fxgl.all;
+    opens com.biblioteca            to javafx.fxml;
+    opens com.biblioteca.controller to javafx.fxml;
+    opens com.biblioteca.model      to javafx.base;
+    opens com.biblioteca.services   to javafx.base;
 
-    opens com.biblioteca.catalogolibrosjavafx to javafx.fxml;
+    exports com.biblioteca;
+    exports com.biblioteca.controller;
+    exports com.biblioteca.model;
     exports com.biblioteca.services;
 }

@@ -3,7 +3,7 @@ package com.biblioteca.services;
 import com.biblioteca.model.Libro;
 
 import java.io.*;
-import java.nio.file.Files;
+import java.nio.file.*;
 import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -43,14 +43,14 @@ public class LibroServices {
     }
     public void actualizar(String isbnOriginal, Libro actualizacion){
         validar(actualizacion);
-        if (!isbnOriginal.equalsIgnoreCase((actualizacion.getIsbn()) && existeIsbn(actualizacion.getIsbn()))){
+        if (!isbnOriginal.equalsIgnoreCase(actualizacion.getIsbn()) && existeIsbn(actualizacion.getIsbn())){
             throw new IllegalArgumentException("ya existe un libro con el ISBN:" + actualizacion.getIsbn());
 
         }
         for (int i =0; i< catalogo.size();i++){
             if (catalogo.get(i).getIsbn().equalsIgnoreCase(isbnOriginal)){
                 catalogo.set(i, actualizacion);
-                guadarEnArchivo();
+                guardarEnArchivo();
                 return;
             }
         }
@@ -111,7 +111,7 @@ public void cargarDesdeArchivo(){
 }
 public void guardarEnArchivo(){
         try {
-            File.crateDirectories(Paths.get("data"));
+            Files.createDirectories(Paths.get("data"));
 
             try (BufferedWriter bw = new BufferedWriter(new FileWriter(ARCHIVO_REPORTE))) {
                 bw.write("# Catálogo Biblioteca Escolar - formato: isbn;titulo;autor;anio;genero;disponible");
@@ -124,7 +124,7 @@ public void guardarEnArchivo(){
                             l.getAutor(),
                             String.valueOf(l.getAnio()),
                             l.getGenero(),
-                            String.valueOf(l.Disponible()));
+                            String.valueOf(l.getDisponible()));
                     bw.write(linea);
                     bw.newLine();
             }
@@ -163,7 +163,7 @@ public void guardarEnArchivo(){
                             l.getAutor(),
                             String.valueOf(l.getAnio()),
                             l.getGenero(),
-                            l.Disponible() ? "Sí" : "No");
+                            l.getDisponible() ? "Sí" : "No");
                     bw.write(linea);
                     bw.newLine();
                 }
@@ -206,6 +206,8 @@ public void guardarEnArchivo(){
         return catalogo.stream()
                 .anyMatch(l -> l.getIsbn().equalsIgnoreCase(isbn));
     }
+
+
 }
 
 
