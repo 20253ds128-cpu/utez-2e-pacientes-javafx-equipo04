@@ -1,0 +1,7 @@
+# Catálogo Biblioteca Escolar - formato: isbn;titulo;autor;anio;genero;disponible
+100125;La Vuelta Al Mundo en 80 Días;Julio Verne;1872;Novela;true
+100126;Don Quijote de la Mancha;Miguel de Cervantes;1605;Novela;true
+100127;Cien Años de Soledad;Gabriel García Márquez;1967;Realismo mágico;true
+100128;El Principito;Antoine de Saint-Exupéry;1943;Fábula;true
+100129;1984;George Orwell;1949;Distopía;false
+100130;Orgullo y Prejuicio;Jane Austen;1813;Romance;true
